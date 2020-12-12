@@ -1,6 +1,8 @@
 jQuery(function ($) {
-
-  new WOW().init();
+wow= new WOW({
+  mobile:false
+})
+wow.init({});
     $(window).scroll(function () {
       
         scrollTop = $(window).scrollTop();
@@ -97,6 +99,12 @@ jQuery(function ($) {
         }
       });
     }
+    if( $(window).width()< 767){
+      $(".nav-link").click(function(){
+        $(".overlay").css("display","none")
+        $(".collapse").collapse('hide') ;
+      })
+    }
     $(document).on("scroll", onScroll);
     $('.navbar-collapse .nav-link').on('click', function () {
       $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
@@ -110,5 +118,9 @@ jQuery(function ($) {
       $(this).css("display","none");
       $(".collapse").collapse('hide') 
     });
+    $(".close").click(function(){
+      $(".overlay").css("display","none");
+      $(".collapse").collapse('hide') 
+    })
 });
 
