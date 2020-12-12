@@ -1,12 +1,12 @@
 jQuery(function ($) {
 
-        
+  new WOW().init();
     $(window).scroll(function () {
       
         scrollTop = $(window).scrollTop();
 
         if (scrollTop > $('header').height()) {
-            $("#counter").css("padding-top", "150px");
+           
             $('header').addClass('scrollNav');
 
 
@@ -103,6 +103,12 @@ jQuery(function ($) {
     
       return false;
     });
-    
+    $(".navbar-toggler").click(function(){
+      $(".overlay").css("display","block");
+    });
+    $(".overlay").click(function(){
+      $(this).css("display","none");
+      $(".collapse").collapse('hide') 
+    });
 });
 
