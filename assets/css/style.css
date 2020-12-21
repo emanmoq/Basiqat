@@ -201,20 +201,20 @@ font-size: 25px;;
     .aboutItem .col-md-6{
         padding: 0;;
     }
-.aboutSlider .owl-dots {
+ .owl-dots {
     width:100%;
     margin-top:20px;
     text-align: center;
 
 }
-.aboutSlider .owl-dot{
+ .owl-dot{
     width:10px;
     height:10px;
     border-radius: 50%;
     margin:5px;
     border:1px solid #00954D !important;
 }
-.aboutSlider .owl-dot.active{
+.owl-dot.active{
     background-color: #00954D !important;
 }
 #message{

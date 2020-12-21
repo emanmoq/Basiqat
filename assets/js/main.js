@@ -80,7 +80,7 @@ wow.init({});
           rtl:true,
           items:1,
           margin:0,
-          dots:false,
+          dots:true,
           nav:false,
     
          
