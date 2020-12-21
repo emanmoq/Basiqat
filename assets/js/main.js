@@ -74,6 +74,17 @@ wow.init({});
         }
          
         });
+        $('.membersCarusel').owlCarousel({
+          autoplay: false,
+          loop: true,
+          rtl:true,
+          items:1,
+          margin:0,
+          dots:false,
+          nav:false,
+    
+         
+        });
         $('.sliderDots').on('click', 'li', function(e) {
           $(".MessageSlider").trigger('to.owl.carousel', [$(this).index(), 300]);
          });

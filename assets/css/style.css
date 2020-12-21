@@ -589,6 +589,9 @@ bottom:0;
 
     display: none;
 }
+.membersCarusel .owl-stage-outer{
+    padding:10px 0;
+}
 @media (min-width:300px) and (max-width:767px){
     body{
         font-size:10px;;
